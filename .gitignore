@@ -2,6 +2,7 @@
 /shelf/
 .idea/workspace.xml
 venv/
+.idea/
 
 
 /mvts_fss_scs/data/
