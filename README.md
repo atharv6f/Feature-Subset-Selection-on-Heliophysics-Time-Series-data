@@ -3,11 +3,11 @@
 ### Setup Project
 
 ```
-git clone https://username@bitbucket.org/gsudmlab/mvts_fss_scs.git
+git clone https://username@bitbucket.org/gsudmlab/featuresubsetselection_on_swan-sf.git
 cd featuresubsetselection_on_swan-sf
 python -m venv venv
 source ./venv/bin/activate
-(venv) mvts_fss_scs> pip3 install -r ./requirements.txt
+(venv) featuresubsetselection_on_swan-sf> pip3 install -r ./requirements.txt
 
 ```
 
