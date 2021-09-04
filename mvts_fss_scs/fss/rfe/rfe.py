@@ -1,4 +1,3 @@
-# from mvts_fss_scs.fss.base_fss import BaseFSS
 import numpy as np
 import pandas as pd
 import os
@@ -12,29 +11,6 @@ from sklearn.feature_selection import RFE
 from time import perf_counter
 from sklearn.preprocessing import MinMaxScaler
 
-
-
-# class RFE(BaseFSS):
-#   def __init__(self,data = None,**kwargs):
-	
-#     if data:
-#       self.data = data
-#     else:
-#       super().__init__(data)
-		
-#     """
-#     1. This is where use initialize the keyword arguments you need for your algorithm.
-#     Refer pie.py or csfs.py to get a rough idea of the implementation.
-
-#     2. You need to implement a method called rank which returns your scores (dataframe) in desceneding order
-#       in the following format.
-
-#       Features | Score
-
-#     3. Create an instance of the above class in the main __init__file
-#     """
-#   def rank(self):
-#     pass
 
 def rfe(estimator, X_train, y_train):
 		selector = RFE(estimator, n_features_to_select=1, step=2)   
@@ -82,7 +58,7 @@ def vectorize(data_3d):
 def main():
 	start_time = perf_counter()
 	DATA_PATH = "mvts_fss_scs/preprocessed_data"
-	EXPORT_PATH = "Results/ranks2/"
+	EXPORT_PATH = "Results/ranks/"
 
 	data = np.load(os.path.join(DATA_PATH, "partition1.npz"), allow_pickle=True)
 	X_train = vectorize(data['np_data'])
