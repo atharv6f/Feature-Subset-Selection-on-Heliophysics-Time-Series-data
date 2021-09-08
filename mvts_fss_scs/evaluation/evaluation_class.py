@@ -12,23 +12,13 @@ sys.path.append("C:\\Users\\ayeolekar1\\Desktop\\mvts_fss_scs")
 
 import numpy as np
 import pandas as pd
-# from CONSTANTS import RESULTS, SAMPLED_DATA_SAMPLES
+from CONSTANTS import RESULTS, SAMPLED_DATA_SAMPLES
 from mvts_fss_scs.evaluation.metrics import *
 from mvts_fss_scs.evaluation.metrics import calc_hss2, calc_tss
 from mvts_fss_scs.fss.utils import get_column_names, save_table
 from sklearn.metrics import accuracy_score, confusion_matrix
 from tqdm import tqdm
 from tslearn.svm import TimeSeriesSVC
-
-
-# RESULTS = "/home/ayeolekar1/mvts_fss_scs/Results"
-# SAMPLED_DATA_SAMPLES = "/home/ayeolekar1/mvts_fss_scs/mvts_fss_scs/sampled_data_samples"
-
-# RESULTS = "C:\\Users\\ayeolekar1\\Desktop\\mvts_fss_scs\\Results"
-# SAMPLED_DATA_SAMPLES = "C:\\Users\\ayeolekar1\\Desktop\\mvts_fss_scs\\mvts_fss_scs\\sampled_data_samples"
-
-RESULTS = "D:\Projects\mvts_fss_scs\Results"
-SAMPLED_DATA_SAMPLES = "D:\Projects\mvts_fss_scs\mvts_fss_scs\sampled_data_samples"
 
 
 class Evaluation:

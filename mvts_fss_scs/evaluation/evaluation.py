@@ -6,6 +6,7 @@ from concurrent.futures import ProcessPoolExecutor, as_completed
 import sys
 import inspect
 from time import perf_counter
+from CONSTANTS import RESULTS, SAMPLED_DATA_SAMPLES
 
 currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 parentdir = os.path.dirname(currentdir)
@@ -20,8 +21,8 @@ from tslearn.svm import TimeSeriesSVC
 
 
 MAX_WORKERS = 6
-RESULTS_PATH = "Results"
-SAMPLED_DATA_SAMPLES = "mvts_fss_scs/sampled_data"
+RESULTS_PATH = RESULTS
+SAMPLED_DATA = SAMPLED_DATA_SAMPLES
 
 
 def __get_column_mapping():
@@ -136,7 +137,7 @@ def multivariate(sampled_file_path, feature_set,clf,X_train,y_train):
 def main():
   start_time = perf_counter()
 
-  sampled_file_path = SAMPLED_DATA_SAMPLES
+  sampled_file_path = SAMPLED_DATA
   training = np.load(os.path.join(sampled_file_path, "training.npz"), allow_pickle=True)
   X_train, y_train = training['training_data'], training['training_labels']
 

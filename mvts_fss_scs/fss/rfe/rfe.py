@@ -10,6 +10,7 @@ from sklearn.ensemble import RandomForestClassifier, ExtraTreesClassifier, AdaBo
 from sklearn.feature_selection import RFE
 from time import perf_counter
 from sklearn.preprocessing import MinMaxScaler
+from CONSTANTS import RESULTS, DATA_PATH
 
 
 def rfe(estimator, X_train, y_train):
@@ -57,9 +58,7 @@ def vectorize(data_3d):
 
 def main():
 	start_time = perf_counter()
-	DATA_PATH = "mvts_fss_scs/preprocessed_data"
-	EXPORT_PATH = "Results/ranks/"
-
+	EXPORT_PATH = os.path.join(RESULTS, "ranks")
 	data = np.load(os.path.join(DATA_PATH, "partition1.npz"), allow_pickle=True)
 	X_train = vectorize(data['np_data'])
 	y_train = data['target']

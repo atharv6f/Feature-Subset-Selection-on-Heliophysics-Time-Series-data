@@ -1,26 +1,19 @@
-import sys
-import inspect
+
 import os
 import sys
 sys.path.append("/home/ayeolekar1/mvts_fss_scs")
 from collections import OrderedDict
 import numpy as np
 import pandas as pd
-#from CONSTANTS import PREPROCESSED_DATA_SAMPLES, SAMPLED_DATA_SAMPLES
+from CONSTANTS import PREPROCESSED_DATA_SAMPLES, SAMPLED_DATA_SAMPLES
 from mvts_fss_scs.fss.utils import get_class_mapping
 from mvts_fss_scs.preprocessing.Sampling.sampler import \
     Sampler as climatology_sampler
 from tqdm import tqdm
 
-currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
-parentdir = os.path.dirname(currentdir)
-maindir = os.path.dirname(os.path.dirname(currentdir))
-sys.path.insert(0, maindir) 
 #TODO: Add paths to refactor code
 
 
-PREPROCESSED_DATA_SAMPLES = "mvts_fss_scs/preprocessed_data_samples"
-SAMPLED_DATA_SAMPLES = "mvts_fss_scs/sampled_data_samples"
 SAVE_PATH = SAMPLED_DATA_SAMPLES
 
 
@@ -85,8 +78,7 @@ class Sampler:
     return id_label[id_label['ID'].isin(id_label_sampled['ID'])]
   
   def get_training_data(self):
-    
-    
+
     file_indices = self.get_sampled_data()["ID"].to_numpy()
     training_data,training_labels = self.get_stacked_training_keys()
     training_matrix = np.zeros((len(file_indices), 60,24))
@@ -99,7 +91,7 @@ class Sampler:
       training_matrix[i] = X
       i+=1
 
-    return file_indices
+    return training_matrix,label_vector
 
   def get_testing_data(self):
     
@@ -139,20 +131,15 @@ def main():
   partitions = [partition_1,partition_2,partition_3,partition_4,partition_5]
   s = Sampler(partitions)
 
-
-  for i in range(5):
-    
+  training_data, training_labels = s.get_training_data()
 
 
-    training_data, training_labels = s.get_training_data()
-    np.savez_compressed(os.path.join(SAMPLED_DATA_SAMPLES,f"training{i+1}.npz"), training_data=training_data, training_labels=training_labels)
-  
-  
+  np.savez_compressed(os.path.join(SAMPLED_DATA_SAMPLES,f"training.npz"), training_data=training_data, training_labels=training_labels)
   testing_data,testing_labels = s.get_testing_data()
 
   for k in range(len(testing_data)):
 
-    
+    print(testing_labels[k])
 
     np.savez_compressed(os.path.join(SAMPLED_DATA_SAMPLES,f"testing{str(k+3)}.npz"), testing_data=testing_data[k], testing_labels=testing_labels[k])
   # for k in range(5):
@@ -173,7 +160,5 @@ def main():
 if __name__ == "__main__":
   main()
 
-# file1 = np.load("D:\Projects\mvts_fss_scs\mvts_fss_scs\sampled_data_samplestesting1.npz")
-# for keys in file1.keys():
-#   print(keys)
+
 

@@ -132,6 +132,3 @@ def main():
 if __name__ == "__main__":
   main()
 
-# file1 = np.load("D:\Projects\mvts_fss_scs\mvts_fss_scs\sampled_data_samplestesting1.npz")
-# for keys in file1.keys():
-#   print(keys)
