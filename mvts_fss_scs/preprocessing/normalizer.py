@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 
-
+# path/to/data
 RAW_DATA_PATH = os.path.join(os.getcwd(),"data","SCS_mini","raw")
 PROCESSED_DATA_PATH =  os.path.join(os.getcwd(),"data","SCS_mini","processed")
 

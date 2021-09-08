@@ -5,7 +5,7 @@ import os
 import numpy as np
 import pandas as pd
 
-
+# path/to/data
 SWAN_DATA_PATH = os.path.join(os.getcwd(),"data","SWAN-SF")
 RAW_DATA_PATH = os.path.join(os.getcwd(),"data","SCS_mini","raw")
 
