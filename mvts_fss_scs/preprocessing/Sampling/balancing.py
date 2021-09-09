@@ -10,12 +10,12 @@ from mvts_fss_scs.preprocessing.Sampling.sampler import \
     Sampler as climatology_sampler
 from tqdm import tqdm
 
-from CONSTANTS import PREPROCESSED_DATA_SAMPLES, SAMPLED_DATA_SAMPLES
+
 currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 parentdir = os.path.dirname(currentdir)
 maindir = os.path.dirname(os.path.dirname(currentdir))
 sys.path.insert(0, maindir) 
-
+from CONSTANTS import PREPROCESSED_DATA_SAMPLES, SAMPLED_DATA_SAMPLES
 PREPROCESSED_DATA_SAMPLES = PREPROCESSED_DATA_SAMPLES
 SAMPLED_DATA_SAMPLES = SAMPLED_DATA_SAMPLES
 SAVE_PATH = SAMPLED_DATA_SAMPLES
