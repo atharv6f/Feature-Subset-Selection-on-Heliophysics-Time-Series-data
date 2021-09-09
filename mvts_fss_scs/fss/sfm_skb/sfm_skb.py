@@ -8,7 +8,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.feature_selection import SelectFromModel, SelectKBest, f_classif, mutual_info_classif, chi2
 from sklearn.svm import SVC
 from sklearn.ensemble import RandomForestClassifier, ExtraTreesClassifier, AdaBoostClassifier, GradientBoostingClassifier, BaggingClassifier
-from CONSTANTS import RESULTS, DATA_PATH
+
 
 def vectorize(data_3d):
 	first24 = ['TOTUSJH', 'TOTBSQ', 'TOTPOT', 'TOTUSJZ', 'ABSNJZH', 'SAVNCPP',
@@ -66,7 +66,8 @@ def skb(estimator,X_train, y_train):
 
 def main():
 	start_time = perf_counter()
-	EXPORT_PATH = os.path.join(RESULTS, "ranks")
+	DATA_PATH = "mvts_fss_scs/preprocessed_data"
+	EXPORT_PATH = "Results/ranks/"
 	
 	data = np.load(os.path.join(DATA_PATH, "partition1.npz"), allow_pickle=True)
 	X_train = vectorize(data['np_data'])

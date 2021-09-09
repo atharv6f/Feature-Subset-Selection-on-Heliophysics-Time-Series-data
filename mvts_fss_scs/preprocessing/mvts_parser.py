@@ -5,9 +5,12 @@ import os
 import numpy as np
 import pandas as pd
 
-# path/to/data
-SWAN_DATA_PATH = os.path.join(os.getcwd(),"data","SWAN-SF")
-RAW_DATA_PATH = os.path.join(os.getcwd(),"data","SCS_mini","raw")
+
+SWAN_DATA_PATH = "/home/spatel389/data/SWAN-SF/"
+RAW_DATA_PATH = "/home/spatel389/data/SCS_mini/raw/"
+
+# SWAN_DATA_PATH = "D:/Data Archives/SWAN-SF/"
+# RAW_DATA_PATH = "D:/Data Archives/scs_raw/"
 
 
 # To avoid location based indexing and ensuring consistency in data extraction

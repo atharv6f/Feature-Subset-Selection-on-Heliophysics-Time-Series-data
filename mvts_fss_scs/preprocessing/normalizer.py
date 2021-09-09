@@ -6,9 +6,12 @@ import numpy as np
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 
-# path/to/data
-RAW_DATA_PATH = os.path.join(os.getcwd(),"data","SCS_mini","raw")
-PROCESSED_DATA_PATH =  os.path.join(os.getcwd(),"data","SCS_mini","processed")
+
+# RAW_DATA_PATH = "/home/sagar/Data/Data_Archives/SCS/raw"
+# PROCESSED_DATA_PATH = "/home/sagar/Data/Data_Archives/SCS/processed"
+
+RAW_DATA_PATH = "/home/spatel389/data/SCS_mini/raw/"
+PROCESSED_DATA_PATH = "/home/spatel389/data/SCS_mini/processed/"
 
 
 def get_files(path, extention):

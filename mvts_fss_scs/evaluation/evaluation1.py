@@ -17,7 +17,6 @@ from mvts_fss_scs.evaluation.metrics import calc_hss2, calc_tss
 from mvts_fss_scs.fss.utils import get_column_names, save_table, update_results, prepare_path
 from tqdm import tqdm
 from tslearn.svm import TimeSeriesSVC
-from CONSTANTS import RESULTS, SAMPLED_DATA_SAMPLES
 
 def get_files(path, extention):
     """Given directory path and extention - returns list of files within the directory including subdirectories"""
@@ -29,9 +28,9 @@ def get_files(path, extention):
     return file_list
 
 MAX_WORKERS = 12
-RANKS_PATH = os.path.join(RESULTS, "ranks")
-RESULTS_PATH = os.path.join(RESULTS, "evaluations_test")
-SAMPLED_DATA_PATH = SAMPLED_DATA_SAMPLES
+RANKS_PATH = "Results/ranks"
+RESULTS_PATH = "Results/evaluations_test"
+SAMPLED_DATA_PATH = "mvts_fss_scs/sampled_data"
 TRAINING = "training1.npz"
 IDX = str(TRAINING.split('.')[0][-1])
 RANKING_FILES = [x.split('/')[-1] for x in get_files(RANKS_PATH,".csv")]

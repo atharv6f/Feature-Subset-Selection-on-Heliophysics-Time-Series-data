@@ -140,7 +140,9 @@ class CLEVER(BaseFSS):
 
         count = 0
         P_values_each_file = pd.DataFrame(columns=["percentvar", 'no_of_variables'])
-        loadings_path = os.path.join(os.getcwd(), "fss", "clever","Loadings")
+        loadings_path = os.path.join(os.getcwd(), "fss\\clever\\Loadings\\")
+        #loadings_path = r"C:\\Users\\Krishna Rukmini\\PycharmProjects\\SummerCodeSprint\\mvts_fss_scs\\mvts_fss_scs\\fss\\clever\\Loadings\\"
+        #file_name = get_file_name(CONSTANTS.part1['file_path'][0:2])
         for ft in self.data['np_data']:
             data = pd.DataFrame(ft)
             corrMatrix = data.corr()
@@ -171,7 +173,7 @@ class CLEVER(BaseFSS):
             H_matrix = np.matrix(np.add(H_matrix, np.matmul(np.asarray(Loading_T), np.asarray(Loading))), dtype=float)
         new_u, new_s, new_Vh = SVD(H_matrix)
         DCPC = pd.DataFrame(new_u[:p][:])
-        DCPC.to_csv(os.path.join(os.getcwd(), "fss","clever","DCPC.csv"), sep='\t')
+        DCPC.to_csv(os.path.join(os.getcwd(), "fss/clever/DCPC.csv"), sep='\t')
         return DCPC, data_col
 
     def rank(self):

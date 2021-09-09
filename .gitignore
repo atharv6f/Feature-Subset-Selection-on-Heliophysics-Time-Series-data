@@ -2,7 +2,6 @@
 /shelf/
 .idea/workspace.xml
 venv/
-.idea/
 
 
 /mvts_fss_scs/data/
@@ -36,5 +35,13 @@ build/lib.win-amd64-3.8/Evaluation Pipeline.cp38-win_amd64.pyd
 /mvts_fss_scs/decorators.py
 /mvts_fss_scs/evaluation/univariate/
 /mvts_fss_scs/evaluation/univariate.py
-
+/mvts_fss_scs/Results/Aggregated Results/
 mvts_fss_scs/evaluation/trial.py
+.gitignore
+Results/Aggregated Results/Python Plots.ipynb
+Results/Aggregated Results/linear_heatmap.pdf
+Results/Aggregated Results/linear_multi_heatmap.svg
+Results/Aggregated Results/linear_heatmap.svg
+Results/Aggregated Results/linear_vect_heatmap.svg
+Results/Aggregated Results/rbf.pdf
+ICDM21_HDM_FeatureRanking.pdf

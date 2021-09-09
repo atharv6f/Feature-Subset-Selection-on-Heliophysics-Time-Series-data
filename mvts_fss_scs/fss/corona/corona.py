@@ -57,7 +57,7 @@ class CORONA(BaseFSS):
     :return: ranks of features.
     """
     symmetric_matrix = np.zeros((self.n_features, self.n_features))
-    # right triangle
+    # right traingle
     symmetric_matrix[np.triu_indices(self.n_features, 1)] = ranks
     # left triangle
     symmetric_matrix[np.tril_indices(self.n_features, -1)] = ranks

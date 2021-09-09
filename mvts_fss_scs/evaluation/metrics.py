@@ -8,7 +8,6 @@ def calc_tss(y_true=None, y_predict=None):
     """
     scores = confusion_matrix(y_true, y_predict).ravel()
     TN, FP, FN, TP = scores
-#     print('TN={0}\tFP={1}\tFN={2}\tTP={3}'.format(TN, FP, FN, TP))
     tp_rate = TP / float(TP + FN) if TP > 0 else 0  
     fp_rate = FP / float(FP + TN) if FP > 0 else 0
     
@@ -22,7 +21,7 @@ def calc_hss2(y_true,y_pred):
     """
     scores = confusion_matrix(y_true, y_pred).ravel()
     tn, fp, fn, tp = scores
-#     print('TN={0}\tFP={1}\tFN={2}\tTP={3}'.format(tn, fp, fn, tp))
+
     numer = 2 * ((tp * tn) - (fn * fp))
     denom = ((tp + fn) * (fn + tn)) + ((tp + fp) * (fp + tn))
     hss = (numer / float(denom)) if denom != 0 else 0
