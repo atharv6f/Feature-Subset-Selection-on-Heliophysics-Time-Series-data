@@ -6,6 +6,7 @@ from concurrent.futures import ProcessPoolExecutor, as_completed
 import sys
 import inspect
 from time import perf_counter
+from CONSTANTS import RESULTS, SAMPLED_DATA_SAMPLES
 
 currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 parentdir = os.path.dirname(currentdir)
@@ -28,9 +29,9 @@ def get_files(path, extention):
     return file_list
 
 MAX_WORKERS = 12
-RANKS_PATH = "Results/ranks"
-RESULTS_PATH = "Results/evaluations_test"
-SAMPLED_DATA_PATH = "mvts_fss_scs/sampled_data"
+RANKS_PATH = os.path.join(RESULTS, "ranks")
+RESULTS_PATH = os.path.join(RESULTS, "evaluations_test")
+SAMPLED_DATA_PATH = SAMPLED_DATA_SAMPLES
 TRAINING = "training1.npz"
 IDX = str(TRAINING.split('.')[0][-1])
 RANKING_FILES = [x.split('/')[-1] for x in get_files(RANKS_PATH,".csv")]
