@@ -6,14 +6,9 @@ import numpy as np
 import pandas as pd
 
 
-SWAN_DATA_PATH = "/home/spatel389/data/SWAN-SF/"
-RAW_DATA_PATH = "/home/spatel389/data/SCS_mini/raw/"
+SWAN_DATA_PATH = ""
+RAW_DATA_PATH = "Path/to/Raw_data"
 
-# SWAN_DATA_PATH = "D:/Data Archives/SWAN-SF/"
-# RAW_DATA_PATH = "D:/Data Archives/scs_raw/"
-
-
-# To avoid location based indexing and ensuring consistency in data extraction
 first24 = ['TOTUSJH', 'TOTBSQ', 'TOTPOT', 'TOTUSJZ', 'ABSNJZH', 'SAVNCPP',
            'USFLUX', 'TOTFZ', 'MEANPOT', 'EPSZ', 'MEANSHR', 'SHRGT45', 'MEANGAM',
            'MEANGBT', 'MEANGBZ', 'MEANGBH', 'MEANJZH', 'TOTFY', 'MEANJZD',
