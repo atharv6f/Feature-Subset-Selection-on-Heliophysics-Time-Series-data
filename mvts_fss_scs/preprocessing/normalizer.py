@@ -1,17 +1,13 @@
-import os
-from concurrent.futures import ProcessPoolExecutor, as_completed
 from time import perf_counter
 import os
 import numpy as np
-import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 
 
-# RAW_DATA_PATH = "/home/sagar/Data/Data_Archives/SCS/raw"
-# PROCESSED_DATA_PATH = "/home/sagar/Data/Data_Archives/SCS/processed"
-
-RAW_DATA_PATH = "/home/spatel389/data/SCS_mini/raw/"
-PROCESSED_DATA_PATH = "/home/spatel389/data/SCS_mini/processed/"
+#Generated file
+RAW_DATA_PATH = "Path/to/Raw_data"
+#Preprocessed data samples
+PROCESSED_DATA_PATH = "Path/to/Processed_data"
 
 
 def get_files(path, extention):
@@ -46,9 +42,6 @@ def main():
 
     complete_data = make_global_npz(files)
     scaler, reshaped_data = get_scaler(complete_data)
-
-    # print("Range")
-    # print(np.max(reshaped_data, axis=0) - np.min(reshaped_data, axis=0))
 
 
     for file in files:

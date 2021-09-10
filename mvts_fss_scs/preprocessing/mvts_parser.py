@@ -1,4 +1,3 @@
-import os
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from time import perf_counter
 import os
@@ -6,8 +5,11 @@ import numpy as np
 import pandas as pd
 
 
-SWAN_DATA_PATH = ""
+#Original data
+SWAN_DATA_PATH = "Path/to/Swan_data"
+#Generated file
 RAW_DATA_PATH = "Path/to/Raw_data"
+
 
 first24 = ['TOTUSJH', 'TOTBSQ', 'TOTPOT', 'TOTUSJZ', 'ABSNJZH', 'SAVNCPP',
            'USFLUX', 'TOTFZ', 'MEANPOT', 'EPSZ', 'MEANSHR', 'SHRGT45', 'MEANGAM',
