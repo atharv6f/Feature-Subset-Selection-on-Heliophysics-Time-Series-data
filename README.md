@@ -12,8 +12,9 @@ All 24 FSS methods are compared: each cell in the below mentioned heatmap (excep
 
 ![heatmap](/images/heatmap.PNG)
 
-Our research came to a close with a report on the best FSS methods in terms of top-k qualities, as well as an interpretation of the findings.
+Our research came to a close with a report on the best FSS methods in terms of top-k qualities, as well as an interpretation of the findings. Below snippets are the TSS and HSS scores observed for all the FSS techniques implemented.
 
+![Tss rbf](images/Tss.PNG) ![Hss rbf](images/hss.PNG)
 
 
 ### Setup Project
@@ -75,7 +76,7 @@ Run the code below in terminal to generate a ranking for each algorithm.
 ```
 
 ### Evaluation
-![Tss rbf](images/Tss.PNG) ![Hss rbf](images/hss.PNG)
+
 ```
 
 Run the code below in terminal to perform the evaluation.
