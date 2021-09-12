@@ -58,7 +58,7 @@ mvts_fss_scs
 ### Ranking
 
 ```
-Run the code below in a terminal to generate a ranking for each algorithm.
+Run the code below in terminal to generate a ranking for each algorithm.
 
         >>> python mvts_fss_scs/__init__.py
 
@@ -67,8 +67,16 @@ Run the code below in a terminal to generate a ranking for each algorithm.
 ### Evaluation
 
 ```
-Run the code below in a terminal to perform the evaluation.
 
-        >>> python mvts_fss_scs/__init__.py
+
+
+Run the code below in terminal to perform the evaluation.
+
+        >>> python mvts_fss_scs/evaluation/evaluation1.py
+        >>> python mvts_fss_scs/evaluation/evaluation2.py
+        >>> python mvts_fss_scs/evaluation/evaluation3.py
+        >>> python mvts_fss_scs/evaluation/evaluation4.py
+        >>> python mvts_fss_scs/evaluation/evaluation5.py
+        
 
 ```
