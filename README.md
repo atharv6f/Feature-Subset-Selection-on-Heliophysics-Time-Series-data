@@ -8,10 +8,10 @@
 
 ### Preprocessing
 
-```
+
 ![preprocessing_sampling](/images/preprocessing_sampling_pipeline.jpeg)
 
-```
+
 
 ### Setup Project
 
