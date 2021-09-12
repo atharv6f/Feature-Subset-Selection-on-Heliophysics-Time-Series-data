@@ -1,5 +1,11 @@
 # Feature Subset Selection on SWAN_SF
 
+### Introduction
+
+```
+
+```
+
 ### Setup Project
 
 ```
@@ -48,4 +54,21 @@ mvts_fss_scs
     |__ CONSTANTS.py
     |__ README.md
     |__ requirements.txt
+```
+### Ranking
+
+```
+Run the code below in a terminal to generate a ranking for each algorithm.
+
+        >>> python mvts_fss_scs/__init__.py
+
+```
+
+### Evaluation
+
+```
+Run the code below in a terminal to perform the evaluation.
+
+        >>> python mvts_fss_scs/__init__.py
+
 ```
