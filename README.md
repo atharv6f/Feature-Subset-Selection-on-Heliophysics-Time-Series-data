@@ -6,6 +6,13 @@
 
 ```
 
+### Preprocessing
+
+```
+![preprocessing sampling](mvts_fss_scs/images/ + preprocessing_sampling_pipeline.jpg)
+
+```
+
 ### Setup Project
 
 ```
@@ -67,8 +74,6 @@ Run the code below in terminal to generate a ranking for each algorithm.
 ### Evaluation
 
 ```
-
-
 
 Run the code below in terminal to perform the evaluation.
 
