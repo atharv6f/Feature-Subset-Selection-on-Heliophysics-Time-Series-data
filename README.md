@@ -9,9 +9,13 @@
 ### Preprocessing
 
 
+
 ![preprocessing_sampling](/images/preprocessing_sampling_pipeline.jpeg)
 
 
+### Implementation
+
+In order to obtain insight into the importance of the SWAN-SF features, we used a variety of methodologies in this study, which are summarized in below Table. Filters and wrappers, supervised and unsupervised algorithms, univariate and multivariate approaches, and vectorized-based and Multivariate Time Series-based (MTS-based) strategies are all included in our list. We'll go over their implementations in this section.
 
 ### Setup Project
 
