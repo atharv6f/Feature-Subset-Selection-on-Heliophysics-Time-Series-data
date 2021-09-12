@@ -1,20 +1,17 @@
 # Feature Subset Selection on SWAN_SF
 
-The Space Weather ANalytics for Solar Flares (SWAN-SF) is a multivariate time series benchmark dataset that was recently constructed to serve as a testbed for solar flare forecasting models in the heliophysics community. SWAN-SF has 54 distinct features, including 24 quantitative features derived from active region photospheric magnetic field maps that describe previous flare activity.In this study, we thoroughly addressed the topic of quantifying the importance of these variables to the difficult task of flare forecasting . For the preprocessing, feature selection, and assessment phases, we created an end-to-end pipeline.We methodologically compared the results of various FSS algorithms, both on multivariate time series and vectorized formats, and tested their correlation and reliability, to the extent possible, by using the selected features for flare forecasting on unseen data, in both univariate and multivariate fashions. Our research came to a close with a report on the best FSS methods in terms of top-k qualities, as well as an interpretation of the findings.
+The Space Weather ANalytics for Solar Flares (SWAN-SF) is a multivariate time series benchmark dataset that was recently constructed to serve as a testbed for solar flare forecasting models in the heliophysics community. SWAN-SF has 54 distinct features, including 24 quantitative features derived from active region photospheric magnetic field maps that describe previous flare activity.
 
+```
 Dataset used is SWAN-SF: Space Weather ANalytics for Solar Flares You can find the dataset at "[https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/EBCFKM]"
+```
+In this study, we thoroughly addressed the topic of quantifying the importance of these variables to the difficult task of flare forecasting . 
 
-### Preprocessing
-
-
-
-![preprocessing_sampling](/images/preprocessing_sampling_pipeline.jpeg)
-
-
-### Implementation
-
-In order to obtain insight into the importance of the SWAN-SF features, we used a variety of methodologies in this study, which are summarized in below�Table. Filters and wrappers, supervised and unsupervised algorithms, univariate and multivariate approaches, and vectorized-based and Multivariate Time Series-based (MTS-based) strategies are all included in our list. We'll go over their implementations in this section.
+In order to obtain insight into the importance of the SWAN-SF features, we used a variety of methodologies in this study, which are summarized in below table. Filters and wrappers, supervised and unsupervised algorithms, univariate and multivariate approaches, and vectorized-based and Multivariate Time Series-based (MTS-based) strategies are all included in our list. We'll go over their implementations in this section.
 ![Table](/images/table.PNG)
+
+For the preprocessing, feature selection, and assessment phases, we created an end-to-end pipeline.We methodologically compared the results of various FSS algorithms, both on multivariate time series and vectorized formats, and tested their correlation and reliability, to the extent possible, by using the selected features for flare forecasting on unseen data, in both univariate and multivariate fashions. Our research came to a close with a report on the best FSS methods in terms of top-k qualities, as well as an interpretation of the findings.
+
 
 ### Setup Project
 
