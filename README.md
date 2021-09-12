@@ -64,6 +64,7 @@ mvts_fss_scs
     |__ Results
     |__ CONSTANTS.py
     |__ README.md
+    |__ __init__.py
     |__ requirements.txt
 ```
 ### Ranking
