@@ -2,7 +2,7 @@
 
 The Space Weather ANalytics for Solar Flares (SWAN-SF) is a multivariate time series benchmark dataset that was recently constructed to serve as a testbed for solar flare forecasting models in the heliophysics community. SWAN-SF has 54 distinct features, including 24 quantitative features derived from active region photospheric magnetic field maps that describe previous flare activity.
 
-Dataset used is SWAN-SF: [Space Weather ANalytics for Solar Flares](#https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/EBCFKM)
+Dataset used is SWAN-SF: [Space Weather ANalytics for Solar Flares](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/EBCFKM)
 
 In this study, we thoroughly addressed the topic of quantifying the importance of these variables to the difficult task of flare forecasting. For the preprocessing, feature selection, and assessment phases, we created an end-to-end pipeline.We methodologically compared the results of various FSS algorithms, both on multivariate time series and vectorized formats, and tested their correlation and reliability, to the extent possible, by using the selected features for flare forecasting on unseen data, in both univariate and multivariate fashions.Below image describes our methodology and evaluation.
 
