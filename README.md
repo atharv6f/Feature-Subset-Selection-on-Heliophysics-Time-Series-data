@@ -9,7 +9,7 @@
 ### Preprocessing
 
 ```
-![preprocessing sampling](images/preprocessing_sampling_pipeline.jpeg)
+![preprocessing_sampling](/images/preprocessing_sampling_pipeline.jpeg)
 
 ```
 
