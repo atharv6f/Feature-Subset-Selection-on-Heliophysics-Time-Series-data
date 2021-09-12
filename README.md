@@ -9,7 +9,7 @@
 ### Preprocessing
 
 ```
-![preprocessing sampling](mvts_fss_scs/images/ + preprocessing_sampling_pipeline.jpg)
+![preprocessing sampling](mvts_fss_scs/images/ + preprocessing_sampling_pipeline.jpeg)
 
 ```
 
