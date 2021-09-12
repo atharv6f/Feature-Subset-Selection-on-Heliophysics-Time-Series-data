@@ -75,7 +75,7 @@ Run the code below in terminal to generate a ranking for each algorithm.
 ```
 
 ### Evaluation
-
+![Tss rbf](images/Tss.PNG) ![Hss rbf](images/hss.PNG)
 ```
 
 Run the code below in terminal to perform the evaluation.
