@@ -10,7 +10,16 @@ In this study, we thoroughly addressed the topic of quantifying the importance o
 ![Table](/images/table.PNG)
 
 
-For the preprocessing, feature selection, and assessment phases, we created an end-to-end pipeline.We methodologically compared the results of various FSS algorithms, both on multivariate time series and vectorized formats, and tested their correlation and reliability, to the extent possible, by using the selected features for flare forecasting on unseen data, in both univariate and multivariate fashions. Our research came to a close with a report on the best FSS methods in terms of top-k qualities, as well as an interpretation of the findings.
+For the preprocessing, feature selection, and assessment phases, we created an end-to-end pipeline.We methodologically compared the results of various FSS algorithms, both on multivariate time series and vectorized formats, and tested their correlation and reliability, to the extent possible, by using the selected features for flare forecasting on unseen data, in both univariate and multivariate fashions.Below image describes our methodology and evaluation.
+
+![Methodology](/images/methodology.jpg)
+
+All 24 FSS methods are compared: each cell in the below mentioned heatmap (except those on the diagonals) indicates the Pearson correlation of two rankings. The diagonal cells use a linear or rbf kernel to compare a ranking to that of SVM (univariate). For improved visibility, the ranks of vectorized-based and MTS-based FSS methods have been separated.
+
+![heatmap](/images/heatmap.PNG)
+
+Our research came to a close with a report on the best FSS methods in terms of top-k qualities, as well as an interpretation of the findings.
+
 
 
 ### Setup Project
