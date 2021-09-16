@@ -2,7 +2,6 @@
 /shelf/
 .idea/workspace.xml
 venv/
-.idea/
 
 /mvts_fss_scs/data/
 mvts_fss_scs/preprocessed_data/
