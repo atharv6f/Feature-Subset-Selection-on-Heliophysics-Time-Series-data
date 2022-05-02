@@ -1,7 +1,7 @@
 
-# import logging
+import logging
 
-# logging.basicConfig(filename='logger_file.log',level = logging.DEBUG, format = '%(levelname)s:%(asctime)s:%(filename)s')
+logging.basicConfig(filename='logger_file.log',level = logging.DEBUG, format = '%(levelname)s:%(asctime)s:%(filename)s')
 
 import os
 from collections import OrderedDict
