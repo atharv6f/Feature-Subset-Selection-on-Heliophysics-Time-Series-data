@@ -12,6 +12,7 @@ mvts_fss_scs/sampled_data/
 /include/
 /mvts_fss_scs/__pycache__/
 
+/mvts_fss_scs/*
 /mvts_fss_scs/__pycache__/
 /mvts_fss_scs/fss/__pycache__/
 /mvts_fss_scs/preprocessing/__pycache__/
